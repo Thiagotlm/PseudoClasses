@@ -1,0 +1,215 @@
+/*
+button{
+    background-color: lightblue;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 2px;
+
+}
+
+button:hover{
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid grey;
+    cursor: pointer;
+    
+}
+.container{
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    margin-top: 30px;
+}
+ button:active{
+    background-color: aqua;
+    color: black;
+ }
+ a:active{
+    background-color: pink;
+    color: black;
+ }
+
+ h1:active{
+    background-color: lightblue;
+ }
+
+ label, button{
+    display: block;
+    margin: 12px;
+    font-size: 1.5rem;
+ }
+
+ input, select{
+    font-size: 1.5rem;
+ }
+ input:focus{
+    outline: 2px dashed lightblue;
+ }
+ select:focus{
+    background-color: lightgrey;
+ }
+ button:focus{
+    outline: 3px solid blue;
+    outline-offset: 2px;
+    background-color: lightcoral;
+    color: white;
+ }
+  label:focus-within{
+    font-weight: bold;
+    color: red;
+  }
+
+  p:target{
+    background-color: lightgreen;
+  }
+  p:target::before{
+    content: "**";
+    color: blue;
+    margin-right: 10px;
+  }
+
+  button:enabled{
+    background-color: lightgray;
+  }
+
+  .exemplo:link{
+    color: greenyellow;
+    background-color: black;
+  }
+
+  a:visited{
+    color: yellow
+  }
+
+  input:placeholder-shown{
+    border-color: royalblue;
+    background-color: royalblue;
+  }
+
+  input::placeholder{
+    color: white;
+  }
+
+  input{
+    accent-color: green;
+  }
+  input:checked + label{
+    color: red;
+    text-decoration: line-through;
+  }*/
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+  }
+
+  form label, form button{
+    display: block;
+    margin-top: 12px;
+  }
+
+  input{
+    padding: 4px 14px;
+    margin-top: 8px;
+  }
+
+  form{
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    background-color: lightgrey;
+  }
+
+  form h3{
+    margin: 0;
+  }
+
+  /*usando a pseudo valid e invalid*/
+
+  input:valid{
+    border: 1px solid green;
+    color: green;
+  }
+
+  input:invalid{
+    border: 1px solid red;
+    color: red;
+
+  }
+
+  input:invalid + span{
+    color: red;
+  }
+
+  .error{
+    color: orangered;
+    font-size: 0.75rem;
+    display: none; 
+    margin-top: 4px; 
+  }
+
+  input:invalid + .error{
+    display: block;
+  }
+
+  /*utilizando as peseudo classes :nth-child e :nth-of-type
+
+  article p:nth-child(2){
+    color: blue;
+  }
+  li:nth-child(even){ 
+    color: red;
+  }
+
+  li:nth-child(odd){ 
+    color: blue;
+  }
+  
+  article p:first-of-type{
+    color: blue;
+  }*/
+
+  article p:last-of-type{
+    color: red;
+  }
+
+.post p:not(.irrelevante) { 
+  color: red;
+}
+
+li:not(:first-child){
+  font-weight: bold;
+}
+
+.gallery{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+figure{
+  width: 100px;
+  height: 100%;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+.gallery figure{
+  box-shadow: 0 0 5px 2px lightgrey;
+}
+figcaption{
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.gallery figure:not(:has(figcaption)){
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}

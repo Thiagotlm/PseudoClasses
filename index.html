@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Pseudo classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes | :hover</h1>
+    <button>
+        Entrar em contato
+    </button>
+
+    <div class="container">
+    </div><hr><br>
+
+    <h1>Pseudo-classes | :active</h1>
+    <button class="botao">
+        Entrar em contato
+    </button><br><br>
+    <a href="https://dio.me">Site da DIO</a><hr><br>
+
+    <h1>Pseudo-classes | :focus, :focus-within e :focus-visible</h1>
+
+    <form>
+        <p>Faça seu pedido! Escolha o sabor do sorvete que deseja:</p>
+        <label>
+            Nome Completo:
+            <input type="text" name="nome">
+        </label>
+        <label>
+            Sabor do sorvete:
+            <select name="sabor">
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="doce-leite">Doce de Leite</option>
+                <option value="abacaxi">Abacaxi</option>
+            </select>
+        </label>
+        <button>Finalizar pedido</button>
+    </form><hr><br>
+    <h1>Pseudo-classes | :target</h1>
+    <h3>Table of contents</h3>
+    <ol>
+        <li><a href="#p1">Pular para o primeiro parágrafo!</a></li>
+        <li><a href="#p2">Pular para o segundo parágrafo!</a></li>
+        <li>
+            <a href="nowhere">
+                Esse link não vai para lugar nenhum, pois ele não existe.
+            </a>
+        </li>
+    </ol><br>
+    
+    <H3>Meu artigo</H3>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque magnam explicabo provident nihil placeat, harum porro commodi consequuntur delectus suscipit repudiandae fugiat, laborum, repellendus ut! Nam temporibus ipsum perferendis fugit!</p>
+    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque magnam explicabo provident nihil placeat, harum porro commodi consequuntur delectus suscipit repudiandae fugiat, laborum, repellendus ut! Nam temporibus ipsum perferendis fugit!</p>
+    <hr><br>
+
+    <h1>Pseudo-classes | :enable e :disabled</h1>
+
+    <button>Botão habilitado</button>
+    <button disabled>Botão desabilitado</button><hr><br>
+
+    <h1>Pseudo-classes | :link e :visited</h1>
+    <a class="exemplo" href="#">Me siga no Instagram</a><br>
+    <a href="https://instagram.com">Instagram</a><hr><br>
+
+    <h1>Pseudo-classes | :placeholder-shown</h1>
+
+    <form>
+        <label for="name">Nome completo</label>
+        <input type="text" name="name"><br><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="name@example.com"><br><br>
+        <label for="age">Sua idade</label>
+        <input type="number" name="age" value="18" placeholder="Você deve ter 18+ anos.">
+    </form><hr><br>
+
+    <h1>Pseudo-classes | :checked e :indeterminate</h1>
+
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">Tarefa 01</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02">Tarefa 02</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-03">
+        <label for="task-03">Tarefa 03</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-04">
+        <label for="task-04">Tarefa 04</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-05">
+        <label for="task-05">Tarefa 05</label>
+    </div><hr>
+
+    <input type="radio" name="genero">
+    <label for="sexo">Feminino</label>
+
+    <input type="radio" name="genero">
+    <label for="sexo">Masculino</label>
+    <hr><br>
+
+    <h1>Pseudo-classes</h1>
+
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01"> :invalid</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02"> :valid</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-03">
+        <label for="task-03"> :in-range</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-04">
+        <label for="task-04"> :out-of-range</label>
+    </div><hr>
+
+    <form>
+        <h3>Faça sua compra:</h3>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email">
+        <span class="error">E-mail inválido</span> 
+
+        <label for="codigo-produto">Código do Produto:</label>
+        <input type="number" name="codigo-produto" min="1000">
+        <span class="error">Código do Produto inválido</span>
+
+        <label for="cupom-desconto">Cupom de Desconto:</label>
+        <input type="cupom" type="text" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+        <span class="error">Cupom inválido</span>
+
+        <label for="data-nascimento">Data de nascimento:</label>
+        <input type="date" name="data-nascimento">
+        <span class="error">Data inválida</span>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" name="amount" min="3" max="10">
+        <span class="error">Quantidade inválida</span>
+        <label>
+            <input type="checkbox" required>
+            <span>Li e aceito os termos de uso.</span>
+        </label>
+        <button type="submit">Comprar</button>
+    </form><hr><br>
+
+    <h1>Pseudo-classes:</h1>
+
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01"> :nth-child</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02"> :nth-of-type</label>
+    </div><hr><br>
+
+    <article>
+        <p class="exemplo">I'm the first paragraph.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi vel saepe dolore necessitatibus nemo earum ea adipisci atque iure doloribus? Amet itaque cumque recusandae soluta tenetur placeat nihil magnam eaque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi vel saepe dolore necessitatibus nemo earum ea adipisci atque iure doloribus? Amet itaque cumque recusandae soluta tenetur placeat nihil magnam eaque.</p>
+        <p class="exemplo">I'm the last paragraph.</p>
+    </article><hr>
+
+    <div class="listas">
+        <ul id="lista-1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+    </div>
+    <div class="categorias">
+        <ul id="categoria-01">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+
+    </div><hr>
+    <h1>Pseudo-classes:</h1>
+
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01"> :first-of-type</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02"> :last-of-type</label>
+    </div><hr><br>
+    <article>
+        <div class="exemplo">Eu sou uma div</div>
+        <p class="exemplo">Eu sou o primeiro parágrafo</p>
+        <p class="exemplo">Eu sou o segundo parágrafo</p>
+        <p class="exemplo">Eu sou o terceiro parágrafo</p>
+        <p class="exemplo">Eu sou o quarto parágrafo</p>
+    </article><hr><br>
+
+    <h1>Pseudo-classes:</h1>
+
+    <div>
+        <input type="checkbox" name="task">
+        <label for="task"> :not</label>
+    </div>
+    <div class="post">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui velit harum repellendus nulla ex corporis! Pariatur, esse, voluptate quas, facere omnis ullam tempore exercitationem magni consequatur delectus sunt ducimus.</p>
+        <p>Lorem <strong>ipsum dolor</strong>  sit amet consectetur adipisicing elit. Labore ipsum obcaecati possimus impedit ad sapiente repudiandae. Cum maiores alias odit est eaque similique. Nemo voluptates, harum rem tempora eius explicabo?</p>
+        <p>Lorem ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit. Labore ipsum obcaecati possimus impedit ad sapiente repudiandae. Cum maiores alias odit est eaque similique. Nemo voluptates, harum rem tempora eius explicabo?</p>
+        <p class="irrelevante">Ignorar esse parágrafo</p>
+    </div><hr>
+
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+    </ul><hr><br>
+
+    <h1>Pseudo-classes:</h1>
+
+    <div>
+        <input type="checkbox" name="task">
+        <label for="task"> :has</label>
+    </div> <hr>
+    <div class="gallery">
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+        </figure>
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+        </figure>
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+        <figure class="image">
+            <img width="100" src="./assets/img/sebastiao-png-2.png" alt="">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
